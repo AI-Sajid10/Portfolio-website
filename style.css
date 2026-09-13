@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 body{
     font-family: Arial, sans-serif;
 }
@@ -21,8 +20,8 @@ body{
   transition: background 0.3s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease;
 }
 .navbar.transparent {
-  background: rgba(255, 255, 255, 0.2); /* more transparent */
-  backdrop-filter: blur(40px); /* blur effect */
+  background: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(40px); 
   -webkit-backdrop-filter: blur(40px);
   box-shadow: none;
 }
@@ -55,7 +54,337 @@ body{
     color: #2563eb;
 }
 .navbar a.active {
-    color: #3b82f6;     /* Blue highlight */
+    color: #3b82f6;  
     font-weight: 600;
 }
 /*------nav css end-------*/
+
+/*------------hero section css-----------*/
+.hero{
+  width: 100%;
+  padding: 80px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1350px;
+  margin: 90px auto 0 auto;
+  margin-top: 90px; 
+
+  /* white → transparent gradient like reference */
+  background: linear-gradient(to right, white 60%, rgba(255,255,255,0));
+}
+.hero-text{
+  flex: 1;
+}
+.badge{
+  display: inline-block;
+  background: #e4edff;
+  color: #3264ff;
+  padding: 10px 22px;
+  border-radius: 50px;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.hero h1 {
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #0f172a;
+  margin-bottom: 20px;
+}
+.hero h1 .highlight {
+  color: #3264ff;
+}
+.hero p {
+  font-size: 20px;
+  color: #4a5568;
+  max-width: 600px;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+/*buttons*/
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+.btn-primary {
+  background: #3264ff;
+  color: white;
+  padding: 16px 32px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.btn-primary:hover {
+  background: #244ed1;
+}
+.btn-secondary {
+  background: white;
+  color: #1e293b;
+  padding: 16px 32px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  border: 2px solid #e2e8f0;
+  transition: 0.3s;
+}
+.btn-secondary:hover {
+  background: #f1f5f9;
+}
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+/*----------Skills design ----------*/
+.skills-preview{
+  padding: 80px 40px;
+  background: f7f9fc;
+}
+.skills-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.skills-header h2 {
+    font-size: 38px;
+    font-weight: 700;
+}
+.skills-header p {
+    color: #666;
+    margin-top: 5px;
+}
+.view-all {
+    color: #2463eb;
+    font-weight: 600;
+    text-decoration: none;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+.skill-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.07);
+}
+.skill-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.skill-card p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #555;
+}
+.percent {
+    float: right;
+    font-weight: 600;
+}
+.progress {
+    margin-top: 10px;
+    width: 100%;
+    height: 7px;
+    background: #e8ecf5;
+    border-radius: 10px;
+}
+.progress-bar {
+    height: 100%;
+    background: #2463eb;
+    border-radius: 10px;
+}
+.skill-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+.skill-top img {
+    width: 32px;
+    height: 32px;
+}
+
+
+/* Special Counter Card */
+.counter-card {
+    text-align: center;
+}
+
+.counter-card .skill-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.counter-card img {
+    width: 40px;
+    height: 40px;
+    opacity: 0.9;
+}
+
+.counter-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-top: 5px;
+}
+/* Override progress bar (hide it for this card) */
+.counter-card .progress,
+.counter-card .progress-bar,
+.counter-card p .percent {
+    display: none !important;
+}
+
+
+/*-----skills design end------*/
+
+.section-divider {
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(to bottom, transparent, #f7f9fc);
+}
+
+/*hero section css end*/
+
+.section-divider2 {
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(to bottom, transparent, #f7f9fc);
+}
+
+
+/* -------- PROJECT SECTION -------- */
+.project-section {
+    padding: 150px 0;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.section-header h2 {
+    font-size: 36px;
+    color: #1a1a1a;
+}
+
+.section-header p {
+    margin-top: 5px;
+    color: #6b7280;
+}
+
+.view-all {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.projects-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.06);
+    overflow: hidden;
+    width: 360px;
+    min-width: 220px;
+}
+
+.project-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 12px;
+}
+
+.project-content h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.project-content p {
+    color: #6b7280;
+    font-size: 15px;
+    margin-bottom: 16px;
+}
+
+.tech-badges span {
+    display: inline-block;
+    background: #eef2ff;
+    color: #3b82f6;
+    padding: 4px 10px;
+    font-size: 12px;
+    border-radius: 6px;
+    margin-right: 6px;
+    margin-bottom: 8px;
+}
+
+.project-buttons {
+    margin-top: 10px;
+}
+
+.project-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1.5px solid #d1d5db;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #1f2937;
+    font-size: 14px;
+}
+
+.project-btn:hover {
+    background: #f3f4f6;
+}
+/* -------- FOOTER -------- */
+.footer {
+    padding: 12px 0;
+    background: #fff;
+    border-top: 1px solid #e5e7eb;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-icons a {
+    font-size: 20px;
+    color: #374151;
+    margin-left: 18px;
+    text-decoration: none;
+}
+
+.footer-icons a:hover {
+    color: #3b82f6;
+}
+
