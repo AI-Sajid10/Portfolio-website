@@ -388,3 +388,73 @@ body{
     color: #3b82f6;
 }
 
+/*Skill page*/
+/* Skills Page Header */
+.skill-header {
+    padding: 100px 0 125px 0;
+    background: #f8fafc; 
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+.skill-header .container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding : 0 20px;
+    display: block;
+}
+.skill-header h1 {
+    font-size: 48px;
+    font-weight: 500;
+    color: #1e293b;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.skill-header p {
+    font-size: 17px;
+    color: #475569;
+    max-width: 650px;
+    line-height: 1.6;
+}
+.skill-head h2 {
+    font-size: 100px;
+    font-weight: 500;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+/* End Skill page header */
+/* Skills Page Header */
+.skill-ending {
+    padding: 40px 0 70px 0;
+    background: #f8fafc; 
+    text-align: center;
+    border-bottom: 1px solid #e5e7eb;
+}
+.skill-ending .content {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding : 0 20px;
+    display: block;
+}
+.skill-ending h2 {
+    font-size: 30px;
+    font-weight: 100;
+    color: #1e293b;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.skill-ending p {
+    font-size: 16px;
+    color: #475569;
+    max-width: 650px;
+    line-height: 1.7;
+    margin: 0 auto;
+    text-align: center;
+}
+.skill-head h2 {
+    font-size: 25px;
+    font-weight: 200;
+}
+/* End Skill page header */
+
