@@ -150,7 +150,7 @@ body{
 /*----------Skills design ----------*/
 .skills-preview{
   padding: 80px 40px;
-  background: f7f9fc;
+  background: #f7f9fc;
 }
 .skills-header{
   display: flex;
@@ -1024,4 +1024,871 @@ body{
 
 .contact-form button:hover{
   background:#1e40af;
+}
+
+
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   Large  : 1200px+
+   Medium : 768px - 1199px
+   Small  : 0 - 767px
+   ========================================================= */
+
+
+/* =========================
+   LARGE DEVICES
+   1200px and above
+   ========================= */
+
+@media (min-width: 1200px) {
+
+    .container {
+        max-width: 1200px;
+    }
+
+    .hero {
+        padding: 80px 50px;
+    }
+
+    .hero h1 {
+        font-size: 58px;
+    }
+
+    .projects-grid {
+        justify-content: flex-start;
+    }
+
+    .project-card {
+        width: 360px;
+    }
+
+}
+
+
+/* =========================
+   MEDIUM DEVICES
+   768px - 1199px
+   ========================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    /* ---------- NAVBAR ---------- */
+
+    .container {
+        padding: 0 25px;
+    }
+
+    .nav-links {
+        gap: 16px;
+    }
+
+    .nav-links a {
+        font-size: 15px;
+    }
+
+
+    /* ---------- HERO ---------- */
+
+    .hero {
+        padding: 60px 35px;
+        gap: 30px;
+        margin-top: 80px;
+    }
+
+    .badge {
+        font-size: 18px;
+        padding: 8px 18px;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .hero-image img {
+        max-width: 400px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 13px 24px;
+        font-size: 16px;
+    }
+
+
+    /* ---------- SKILLS ---------- */
+
+    .skills-preview {
+        padding: 70px 30px;
+    }
+
+    .skills-header h2 {
+        font-size: 32px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+
+    /* ---------- PROJECTS ---------- */
+
+    .project-section {
+        padding: 100px 30px;
+    }
+
+    .section-header h2 {
+        font-size: 32px;
+    }
+
+    .projects-grid {
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .project-card {
+        width: calc(50% - 15px);
+    }
+
+
+    /* ---------- SKILL PAGE ---------- */
+
+    .skill-header {
+        padding: 80px 0 100px;
+    }
+
+    .skill-header h1 {
+        font-size: 42px;
+    }
+
+    .skill-head h2 {
+        font-size: 70px;
+    }
+
+
+    /* ---------- EDUCATION ---------- */
+
+    .edu-heading {
+        padding: 70px 35px;
+    }
+
+    .edu-heading h1 {
+        font-size: 40px;
+    }
+
+    .edu-section {
+        margin-top: 100px;
+        padding: 0 30px;
+    }
+
+    .edu-card {
+        padding: 30px;
+    }
+
+    .edu-left {
+        gap: 20px;
+    }
+
+    .edu-info h3 {
+        font-size: 23px;
+    }
+
+
+    /* ---------- CERTIFICATION ---------- */
+
+    .cert-section {
+        padding: 80px 30px;
+    }
+
+    .cert-title {
+        padding: 0;
+        font-size: 32px;
+    }
+
+    .cert-grid {
+        max-width: 900px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* ---------- ACHIEVEMENTS ---------- */
+
+    .achievements-section {
+        margin: 70px auto;
+        padding: 0 30px;
+    }
+
+    .achievements-title {
+        font-size: 38px;
+    }
+
+
+    /* ---------- ABOUT ---------- */
+
+    .about-hero {
+        margin: 80px auto;
+        padding: 0 30px;
+    }
+
+    .about-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+
+    /* ---------- CONTACT ---------- */
+
+    .contact-page {
+        margin: 80px auto;
+        padding: 0 30px;
+        gap: 30px;
+    }
+
+}
+
+
+/* =========================
+   SMALL DEVICES
+   767px and below
+   ========================= */
+
+@media (max-width: 767px) {
+
+    /* ---------- GLOBAL ---------- */
+
+    body {
+        overflow-x: hidden;
+    }
+
+
+    /* ---------- NAVBAR ---------- */
+
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .container {
+        height: auto;
+        min-height: 55px;
+        padding: 0 15px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+
+    /* ---------- HERO ---------- */
+
+    .hero {
+        width: 100%;
+        margin-top: 70px;
+        padding: 50px 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 35px;
+        background: linear-gradient(
+            to bottom,
+            white 60%,
+            rgba(255,255,255,0)
+        );
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .badge {
+        font-size: 14px;
+        padding: 8px 16px;
+        margin-bottom: 15px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+        line-height: 1.25;
+        margin-bottom: 15px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 12px 20px;
+        font-size: 15px;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+
+    /* ---------- SKILLS ---------- */
+
+    .skills-preview {
+        padding: 55px 20px;
+    }
+
+    .skills-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 30px;
+    }
+
+    .skills-header h2 {
+        font-size: 28px;
+    }
+
+    .skills-header p {
+        font-size: 14px;
+    }
+
+    .view-all {
+        font-size: 14px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .skill-card {
+        padding: 20px;
+    }
+
+    .skill-card h3 {
+        font-size: 18px;
+    }
+
+
+    /* ---------- PROJECTS ---------- */
+
+    .project-section {
+        padding: 80px 20px;
+    }
+
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 30px;
+    }
+
+    .section-header h2 {
+        font-size: 28px;
+    }
+
+    .section-header p {
+        font-size: 14px;
+    }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .project-card {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .project-card img {
+        height: 180px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    .footer {
+        padding: 20px 0;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .footer-icons a {
+        margin: 0 7px;
+    }
+
+
+    /* ---------- SKILL PAGE ---------- */
+
+    .skill-header {
+        padding: 80px 0 80px;
+    }
+
+    .skill-header .container {
+        padding: 0 20px;
+    }
+
+    .skill-header h1 {
+        font-size: 34px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    .skill-header p {
+        font-size: 15px;
+    }
+
+    .skill-head h2 {
+        font-size: 45px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .skill-ending {
+        padding: 30px 0 50px;
+    }
+
+    .skill-ending h2 {
+        font-size: 25px;
+    }
+
+    .skill-ending p {
+        font-size: 15px;
+    }
+
+
+    /* ---------- EDUCATION HEADER ---------- */
+
+    .edu-heading {
+        width: 100%;
+        padding: 60px 20px;
+        margin-top: 70px;
+        display: block;
+    }
+
+    .edu-container {
+        width: 100%;
+    }
+
+    .edu-heading h1 {
+        font-size: 32px;
+    }
+
+    .edu-heading p {
+        font-size: 14px;
+    }
+
+
+    /* ---------- EDUCATION SECTION ---------- */
+
+    .edu-section {
+        margin: 80px auto 40px;
+        padding: 0 20px;
+    }
+
+    .edu-title {
+        font-size: 28px;
+        margin-bottom: 35px;
+    }
+
+    .edu-card {
+        padding: 22px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .edu-left {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .edu-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+    }
+
+    .edu-info h3 {
+        font-size: 21px;
+    }
+
+    .edu-meta {
+        flex-direction: column;
+        gap: 7px;
+        font-size: 14px;
+    }
+
+    .edu-desc {
+        font-size: 14px;
+    }
+
+    .edu-ach {
+        font-size: 14px;
+    }
+
+    .edu-badge {
+        align-self: flex-start;
+        padding: 12px 18px;
+    }
+
+
+    /* ---------- CERTIFICATIONS ---------- */
+
+    .cert-section {
+        padding: 60px 20px;
+    }
+
+    .cert-title {
+        padding: 0;
+        font-size: 28px;
+        margin-bottom: 35px;
+    }
+
+    .cert-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .cert-card {
+        padding: 25px;
+    }
+
+    .cert-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .cert-year {
+        top: 20px;
+        right: 20px;
+        font-size: 12px;
+        padding: 5px 12px;
+    }
+
+    .cert-card h3 {
+        font-size: 20px;
+    }
+
+    .cert-card p {
+        font-size: 14px;
+    }
+
+
+    /* ---------- ACHIEVEMENTS ---------- */
+
+    .achievements-section {
+        margin: 60px auto;
+        padding: 0 20px;
+    }
+
+    .achievements-title {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .achievement-card {
+        flex-direction: column;
+        gap: 18px;
+        padding: 22px;
+    }
+
+    .achievement-icon {
+        min-width: 55px;
+        width: 55px;
+        height: 55px;
+        font-size: 24px;
+    }
+
+    .achievement-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .achievement-content h3 {
+        font-size: 20px;
+    }
+
+    .achievement-meta {
+        flex-direction: column;
+        gap: 5px;
+        font-size: 13px;
+    }
+
+    .achievement-content p {
+        font-size: 14px;
+    }
+
+
+    /* ---------- ABOUT ---------- */
+
+    .about-hero {
+        margin: 70px auto;
+        padding: 0 20px;
+    }
+
+    .about-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        margin-bottom: 40px;
+    }
+
+    .stat-card {
+        padding: 16px 10px;
+    }
+
+    .stat-card h3 {
+        font-size: 22px;
+    }
+
+    .stat-card p {
+        font-size: 12px;
+    }
+
+    .about-title {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .about-text {
+        padding: 22px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+    }
+
+
+    /* ---------- CONTACT ---------- */
+
+    .contact-page {
+        margin: 70px auto;
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .contact-info h2 {
+        font-size: 28px;
+    }
+
+    .contact-info p {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .contact-info-card {
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .info-card i {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .info-card h4 {
+        font-size: 14px;
+    }
+
+    .info-card span {
+        font-size: 13px;
+        word-break: break-word;
+    }
+
+    .contact-form {
+        padding: 22px;
+        border-radius: 16px;
+    }
+
+    .contact-form h3 {
+        font-size: 22px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+    }
+
+}
+
+
+/* =========================
+   EXTRA SMALL DEVICES
+   480px and below
+   ========================= */
+
+@media (max-width: 480px) {
+
+    /* NAVBAR */
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .nav-links {
+        gap: 7px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        padding: 45px 15px;
+    }
+
+    .hero h1 {
+        font-size: 29px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    /* SKILLS */
+
+    .skills-preview {
+        padding: 45px 15px;
+    }
+
+    .skills-header h2 {
+        font-size: 25px;
+    }
+
+
+    /* PROJECT */
+
+    .project-section {
+        padding: 60px 15px;
+    }
+
+    .section-header h2 {
+        font-size: 25px;
+    }
+
+    .project-card img {
+        height: 150px;
+    }
+
+
+    /* EDUCATION */
+
+    .edu-section {
+        padding: 0 15px;
+    }
+
+    .edu-title {
+        font-size: 25px;
+    }
+
+    .edu-card {
+        padding: 18px;
+    }
+
+
+    /* CERTIFICATION */
+
+    .cert-section {
+        padding: 50px 15px;
+    }
+
+    .cert-title {
+        font-size: 25px;
+    }
+
+
+    /* ACHIEVEMENT */
+
+    .achievements-section {
+        padding: 0 15px;
+    }
+
+    .achievements-title {
+        font-size: 26px;
+    }
+
+
+    /* ABOUT */
+
+    .about-hero {
+        padding: 0 15px;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-title {
+        font-size: 27px;
+    }
+
+
+    /* CONTACT */
+
+    .contact-page {
+        padding: 0 15px;
+    }
+
+    .contact-form {
+        padding: 18px;
+    }
+
 }
